@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d50eefac-3ae7-412d-9863-ce64741e6abf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gss/workshop/testing/pojo/card/CardCreationRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gss/workshop/testing/pojo/card/CardCreationRes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RequestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RequestFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RestClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/tests/TrelloTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/tests/TrelloTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="d50eefac-3ae7-412d-9863-ce64741e6abf" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
