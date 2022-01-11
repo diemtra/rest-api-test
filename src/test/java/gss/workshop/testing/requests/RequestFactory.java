@@ -23,19 +23,17 @@ public class RequestFactory extends TestBase {
    */
   public static Response createBoard(String boardName) {
     logger.info("Creating a new board.");
-    params.putAll(addParams(Map.of("name", boardName)));
+    HashMap<String, String> queryParams = addParams(Map.of("name", boardName));
+    queryParams.putAll(params);
     String requestPath = String.format(prop.getProperty("boardCreationPath"), version);
-    Response res =
-        RestClient.doPostRequestWithParamsAndNoPayload(
-            requestPath,
-            params); // it calls a method of RestClient "doPostRequestWithParamsAndNoPayload"  to
-    // perform the Post request with specific info was prepared.
+    //Call a method of RestClient "doPostRequestWithParamsAndNoPayload"  to perform the Post request with specific info was prepared.
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, queryParams);
     logger.info("Finish board creation.");
     return res;
   }
 
   /**
-   * Send request to create a new board without defaultList
+   * Send request to create a new board with/without defaultList
    *
    * @param boardName expected board name
    * @param defaultList a board without/with default list
@@ -43,9 +41,10 @@ public class RequestFactory extends TestBase {
    */
   public static Response createBoard(String boardName, boolean defaultList) {
     logger.info("Creating a new board.");
-    params.putAll(addParams(Map.of("name", boardName, "defaultLists", false)));
+    HashMap<String, String> queryParams = addParams(Map.of("name", boardName, "defaultLists", defaultList));
+    queryParams.putAll(params);
     String requestPath = String.format(prop.getProperty("boardCreationPath"), version);
-    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, params);
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, queryParams);
     logger.info("Finish board creation.");
     return res;
   }
@@ -57,7 +56,12 @@ public class RequestFactory extends TestBase {
    * @return Response of the request
    */
   public static Response getBoardById(String boardId) {
-    return null;
+    logger.info("Getting an existing board.");
+    Map<String, String> pathParams = Map.of("id", boardId);
+    String requestPath = String.format(prop.getProperty("boardGettingPath"), version);
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, pathParams, params);
+    logger.info("Finish getting a board");
+    return res;
   }
 
   /**
@@ -67,7 +71,12 @@ public class RequestFactory extends TestBase {
    * @return Response of the request
    */
   public static Response deleteBoard(String boardId) {
-    return null;
+    logger.info("Delete an existing board");
+    Map<String, String> pathParams = Map.of("id", boardId);
+    String requestPath = String.format(prop.getProperty("boardDeletionPath"), version);
+    Response res = RestClient.doDeleteRequestWithParams(requestPath, pathParams, params);
+    logger.info("Finish board deletion");
+    return res;
   }
 
   // -------------------List-------------------
@@ -77,29 +86,57 @@ public class RequestFactory extends TestBase {
    *
    * @param boardId the board id which to be added more list
    * @param listName name of the new list created
+   * @param pos position of the list created
    * @return Response of the request
    */
-  public static Response createList(String boardId, String listName) {
-    return null;
+  public static Response createList(String boardId, String listName, String pos) {
+    logger.info("Creating a new list.");
+    Map<String, String> pathParams = Map.of("idBoard", boardId);
+    HashMap<String, String> queryParams = addParams(Map.of("name", listName, "pos", pos));
+    queryParams.putAll(params);
+    String requestPath = String.format(prop.getProperty("listCreationPath"), version);
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, pathParams, queryParams);
+    logger.info("Finish list creation.");
+    return res;
   }
 
   // -------------------Card-------------------
 
   /**
-   * @param taskName
-   * @param listId
-   * @return
+   * Create a new card in a list
+   *
+   * @param cardName name of the new card created
+   * @param cardDesc description of the new card created
+   * @param pos position of the card created
+   * @param listId id of the list which the card is added to
+   * @return Response of the request
    */
-  public static Response createCard(String taskName, String listId) {
-    return null;
+  public static Response createCard(String cardName, String cardDesc, String pos, String listId) {
+    logger.info("Creating a new card.");
+    HashMap<String, String> queryParams = addParams(Map.of("name", cardName, "desc", cardDesc, "pos", pos, "idList", listId));
+    queryParams.putAll(params);
+    String requestPath = String.format(prop.getProperty("cardCreationPath"), version);
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, queryParams);
+    logger.info("Finish card creation.");
+    return res;
   }
 
   /**
-   * @param cardId
-   * @param listId
-   * @return
+   * Update an existing card to another list
+   *
+   * @param cardId id of the existing card
+   * @param listId id of the list which the card is updated to
+   * @return Response of the request
    */
   public static Response updateCard(String cardId, String listId) {
-    return null;
+    logger.info("update an existing card.");
+    Map<String, String> pathParams = Map.of("id", cardId);
+    HashMap<String, String> queryParams = addParams(Map.of("idList", listId));
+    queryParams.putAll(params);
+    String requestPath = String.format(prop.getProperty("cardUpdatePath"), version);
+    Response res = RestClient.doPutRequestWithParamsAndNoPayload(requestPath, pathParams, queryParams);
+    logger.info("Finish updating card.");
+    return res;
   }
 }
+

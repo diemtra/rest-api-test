@@ -145,6 +145,9 @@ public class CardCreationRes {
   @JsonProperty("badges")
   private Badges badges;
 
+  @JsonProperty("votes")
+  private Integer votes;
+
   @JsonProperty("subscribed")
   private Boolean subscribed;
 
@@ -619,6 +622,11 @@ public class CardCreationRes {
   public CardCreationRes withBadges(Badges badges) {
     this.badges = badges;
     return this;
+  }
+
+  @JsonProperty("votes")
+  public Integer getVotes() {
+    return votes;
   }
 
   @JsonProperty("subscribed")

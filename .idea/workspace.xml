@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d50eefac-3ae7-412d-9863-ce64741e6abf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gss/workshop/testing/pojo/card/CardCreationRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gss/workshop/testing/pojo/card/CardCreationRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RequestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RequestFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/tests/TrelloTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/tests/TrelloTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="23VbdTm3FLlUNQoEXeRJdGyOwmV" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager" selected="TestNG.TrelloTests">
+    <configuration name="TrelloTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-api-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gss.workshop.testing.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gss.workshop.testing.tests" />
+      <option name="MAIN_CLASS_NAME" value="gss.workshop.testing.tests.TrelloTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TrelloTests.trelloWorkflowTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="rest-api-test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="gss.workshop.testing.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="gss.workshop.testing.tests" />
+      <option name="MAIN_CLASS_NAME" value="gss.workshop.testing.tests.TrelloTests" />
+      <option name="METHOD_NAME" value="trelloWorkflowTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.TrelloTests" />
+        <item itemvalue="TestNG.TrelloTests.trelloWorkflowTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d50eefac-3ae7-412d-9863-ce64741e6abf" name="Changes" comment="" />
+      <created>1641822290483</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1641822290483</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>
