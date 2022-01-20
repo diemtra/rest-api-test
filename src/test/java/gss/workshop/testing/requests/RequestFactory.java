@@ -57,9 +57,8 @@ public class RequestFactory extends TestBase {
    */
   public static Response getBoardById(String boardId) {
     logger.info("Getting an existing board.");
-    Map<String, String> pathParams = Map.of("id", boardId);
-    String requestPath = String.format(prop.getProperty("boardGettingPath"), version);
-    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, pathParams, params);
+    String requestPath = String.format(prop.getProperty("boardGettingPath"), version, boardId);
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, params);
     logger.info("Finish getting a board");
     return res;
   }
@@ -72,9 +71,8 @@ public class RequestFactory extends TestBase {
    */
   public static Response deleteBoard(String boardId) {
     logger.info("Delete an existing board");
-    Map<String, String> pathParams = Map.of("id", boardId);
-    String requestPath = String.format(prop.getProperty("boardDeletionPath"), version);
-    Response res = RestClient.doDeleteRequestWithParams(requestPath, pathParams, params);
+    String requestPath = String.format(prop.getProperty("boardDeletionPath"), version, boardId);
+    Response res = RestClient.doDeleteRequestWithParams(requestPath, params);
     logger.info("Finish board deletion");
     return res;
   }
@@ -91,11 +89,10 @@ public class RequestFactory extends TestBase {
    */
   public static Response createList(String boardId, String listName, String pos) {
     logger.info("Creating a new list.");
-    Map<String, String> pathParams = Map.of("idBoard", boardId);
     HashMap<String, String> queryParams = addParams(Map.of("name", listName, "pos", pos));
     queryParams.putAll(params);
-    String requestPath = String.format(prop.getProperty("listCreationPath"), version);
-    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, pathParams, queryParams);
+    String requestPath = String.format(prop.getProperty("listCreationPath"), version, boardId);
+    Response res = RestClient.doPostRequestWithParamsAndNoPayload(requestPath, queryParams);
     logger.info("Finish list creation.");
     return res;
   }
@@ -130,11 +127,10 @@ public class RequestFactory extends TestBase {
    */
   public static Response updateCard(String cardId, String listId) {
     logger.info("update an existing card.");
-    Map<String, String> pathParams = Map.of("id", cardId);
     HashMap<String, String> queryParams = addParams(Map.of("idList", listId));
     queryParams.putAll(params);
-    String requestPath = String.format(prop.getProperty("cardUpdatePath"), version);
-    Response res = RestClient.doPutRequestWithParamsAndNoPayload(requestPath, pathParams, queryParams);
+    String requestPath = String.format(prop.getProperty("cardUpdatePath"), version, cardId);
+    Response res = RestClient.doPutRequestWithParamsAndNoPayload(requestPath, queryParams);
     logger.info("Finish updating card.");
     return res;
   }

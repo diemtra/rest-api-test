@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d50eefac-3ae7-412d-9863-ce64741e6abf" name="Changes" comment="" />
+    <list default="true" id="d50eefac-3ae7-412d-9863-ce64741e6abf" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RequestFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RequestFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/gss/workshop/testing/requests/RestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/gss/workshop/testing/requests/RequestFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/gss/workshop/testing/requests/RequestFactory.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
